@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dream Fashion House - Home</title>
+  <style>
+    body {
+      margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fbfd; color: #222;
+    }
+    header {
+      background: #add8e6;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0; font-weight: 700; font-size: 2.5rem;
+    }
+    nav {
+      background: #0077be;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #005f8e;
+    }
+    .banner {
+      background: url('https://images.unsplash.com/photo-1503342452485-86d718d9c7f4?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+    .banner h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .banner p {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background: #0077be;
+      color: white;
+      padding: 12px 30px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #005f8e;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    .intro img {
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+    .intro-text {
+      flex: 1 1 300px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .category-card {
+      background: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      flex: 1 1 280px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .category-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    }
+    .category-icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #0077be;
+    }
+    .category-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .category-desc {
+      font-size: 1rem;
+      color: #555;
+    }
+    .why-choose-us {
+      background: #add8e6;
+      padding: 50px 20px;
+      margin-top: 60px;
+      border-radius: 15px;
+      text-align: center;
+      color: #003f63;
+    }
+    .why-choose-us h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .feature-item {
+      flex: 1 1 250px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    footer {
+      background: #0077be;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 70px;
+      border-radius: 0 0 15px 15px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 900px) {
+      .intro {
+        flex-direction: column;
+      }
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Dream Fashion House</h1>
+</header>
+<nav>
+  <a href="index.html" style="background:#005f8e;">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<section class="banner">
+  <h2>Step into Style, Dress with Confidence</h2>
+  <p>Trendy shoes, stylish clothes & accessories – all in one place.</p>
+  <a href="products.html" class="btn">Shop Now</a>
+</section>
+<main>
+  <section class="intro">
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" alt="Fashion outfit" />
+    <div class="intro-text">
+      <h2>Welcome to Dream Fashion House</h2>
+      <p>Your one-stop destination for fashion that inspires. We bring you the latest trends in footwear, clothing, and accessories – all at affordable prices.</p>
+    </div>
+  </section>
+  <section class="categories" aria-label="Product Categories">
+    <div class="category-card">
+      <div class="category-icon">👟</div>
+      <div class="category-title">Shoes</div>
+      <div class="category-desc">Casual, sports & formal styles for every occasion.</div>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">👗</div>
+      <div class="category-title">Clothes</div>
+      <div class="category-desc">Trendy and comfortable clothing for all seasons.</div>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">🎒</div>
+      <div class="category-title">Accessories</div>
+      <div class="category-desc">Bags, belts & more to complete your look.</div>
+    </div>
+  </section>
+  <section class="why-choose-us" aria-label="Why Choose Us">
+    <h3>Why Choose Us</h3>
+    <div class="features">
+      <div class="feature-item">Affordable Prices – Quality fashion for everyone</div>
+      <div class="feature-item">Latest Trends – Stay ahead in style</div>
+      <div class="feature-item">Customer Care – Friendly service, always</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Ready to upgrade your wardrobe? Explore our latest collection today.</p>
+  <a href="products.html" class="btn">Shop Now</a>
+  <p>&copy; 2025 Dream Fashion House</p>
+</footer>
+</body>
+</html>

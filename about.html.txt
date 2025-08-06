@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Dream Fashion House</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+      background: #f9fbfd;
+    }
+    header {
+      background: #add8e6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+    nav {
+      background: #0077be;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #005f8e;
+    }
+    nav a.active {
+      background: #005f8e;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .content {
+      background: white;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #0077be;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>About Dream Fashion House</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<section class="content">
+  <h2>Our Story</h2>
+  <p>At Dream Fashion House, we believe fashion is more than just clothing – it’s an expression of who you are.</p>
+  <p>Founded in Bangladesh, our mission is to provide high-quality shoes, clothes, and accessories that match your unique style without breaking the bank. Whether you’re dressing for work, a night out, or a casual day, we’ve got you covered.</p>
+  <p>We focus on affordability, style, and customer satisfaction. Your happiness is our priority, and our team works hard to bring you the best in fashion every season.</p>
+</section>
+<footer>
+  <p>&copy; 2025 Dream Fashion House</p>
+</footer>
+</body>
+</html>

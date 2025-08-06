@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Dream Fashion House</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9fbfd;
+      color: #222;
+    }
+    header {
+      background: #add8e6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+    nav {
+      background: #0077be;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #005f8e;
+    }
+    nav a.active {
+      background: #005f8e;
+    }
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+      border-radius: 10px;
+    }
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      background: white;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    footer {
+      background: #0077be;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Dream Fashion House Gallery</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<section class="gallery-grid">
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" alt="Fashion outfit 1" />
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1503342452485-86d718d9c7f4?auto=format&fit=crop&w=600&q=80" alt="Fashion shoes" />
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1542068829-1115f7259450?auto=format&fit=crop&w=600&q=80" alt="Fashion clothes" />
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=600&q=80" alt="Fashion accessories" />
+  </div>
+</section>
+<footer>
+  <p>&copy; 2025 Dream Fashion House</p>
+</footer>
+</body>
+</html>
